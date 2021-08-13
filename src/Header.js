@@ -23,9 +23,9 @@ function Header() {
         <SearchSharp className="header__inputButton" />
       </div>
       <div className="header__icons">
-        <VideoCallSharp />
-        <AppsSharp />
-        <NotificationsSharp />
+        <VideoCallSharp className="header__icon" />
+        <AppsSharp className="header__icon" />
+        <NotificationsSharp className="header__icon" />
         <Avatar />
       </div>
     </div>
