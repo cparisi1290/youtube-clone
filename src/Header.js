@@ -1,4 +1,5 @@
 import React from 'react';
+import './header.css';
 import MenuSharp from '@material-ui/icons/MenuSharp';
 import SearchSharp from '@material-ui/icons/SearchSharp';
 import VideoCallSharp from '@material-ui/icons/VideoCallSharp';
