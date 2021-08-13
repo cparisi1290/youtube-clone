@@ -1,11 +1,10 @@
 import React from 'react';
 import './sidebarRow.css';
-import HomeSharpIcon from '@material-ui/icons/HomeSharp';
 
-function SidebarRow({ title }) {
+function SidebarRow({ Icon, title }) {
   return (
     <div className="sidebarRow">
-      <HomeSharpIcon />
+      <Icon />
       <h2>{title}</h2>
     </div>
   );
