@@ -1,17 +1,17 @@
 import React from 'react';
 import './header.css';
-import MenuSharp from '@material-ui/icons/MenuSharp';
-import SearchSharp from '@material-ui/icons/SearchSharp';
-import VideoCallSharp from '@material-ui/icons/VideoCallSharp';
-import AppsSharp from '@material-ui/icons/AppsSharp';
-import NotificationsSharp from '@material-ui/icons/NotificationsSharp';
+import MenuIcon from '@material-ui/icons/Menu';
+import SearchIcon from '@material-ui/icons/Search';
+import VideoCallIcon from '@material-ui/icons/VideoCall';
+import AppsIcon from '@material-ui/icons/Apps';
+import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from '@material-ui/core/Avatar';
 
 function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <MenuSharp />
+        <MenuIcon />
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg"
           alt="YouTube Logo"
@@ -20,12 +20,12 @@ function Header() {
       </div>
       <div className="header__input">
         <input type="text" placeholder="Search" />
-        <SearchSharp className="header__inputButton" />
+        <SearchIcon className="header__inputButton" />
       </div>
       <div className="header__icons">
-        <VideoCallSharp className="header__icon" />
-        <AppsSharp className="header__icon" />
-        <NotificationsSharp className="header__icon" />
+        <VideoCallIcon className="header__icon" />
+        <AppsIcon className="header__icon" />
+        <NotificationsIcon className="header__icon" />
         <Avatar />
       </div>
     </div>
