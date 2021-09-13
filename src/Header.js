@@ -6,6 +6,7 @@ import VideoCallIcon from '@material-ui/icons/VideoCall';
 import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from '@material-ui/core/Avatar';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [inputSearch, setInputSearch] = useState('');
@@ -13,11 +14,13 @@ function Header() {
     <div className="header">
       <div className="header__left">
         <MenuIcon />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg"
-          alt="YouTube Logo"
-          className="header__logo"
-        />
+        <Link to="/">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg"
+            alt="YouTube Logo"
+            className="header__logo"
+          />
+        </Link>
       </div>
       <div className="header__input">
         <input
@@ -26,7 +29,9 @@ function Header() {
           type="text"
           placeholder="Search"
         />
-        <SearchIcon className="header__inputButton" />
+        <Link to={`/search/${inputSearch}`}>
+          <SearchIcon className="header__inputButton" />
+        </Link>
       </div>
       <div className="header__icons">
         <VideoCallIcon className="header__icon" />
